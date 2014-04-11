@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<div width="645" height="245" style="border:1px #777 dashed">
+
+  <svg id="talkshowshosts" viewBox="0 0 655 245" width="100%" height="445" preserveAspectRatio="xMidYmin meet">
+
+    <style>
+
+      /*event marker mechanics */
+
+      .eventmarker circle + g {
+        opacity: 0; /* hide the events by default */
+        transition:all 1s cubic-bezier(.17,.67,.58,.98);
+      }
+
+
+      .eventmarker circle:hover{
+        fill: red;
+
+      }
+
+
+      .eventmarker circle:hover + g {
+        opacity: 1;
+          transition:all 1s cubic-bezier(.17,.67,.58,.98);
+        }
+
+      #grid  {
+        stroke: none;
+        fill: rgb(124, 124, 124);
+        transition:all 1s cubic-bezier(.17,.67,.58,.98)
+      }
+      .progress-line{
+        stroke-width: 1.6;
+        stroke-miterlimit: 9;
+        fill: none;
+        transition:all 1s cubic-bezier(.17,.67,.58,.98)
+      }
+
+      .monthsection text {
+        fill:rgb(255, 255, 255);
+        font-family: ArialMT, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+        font-size:12px;
+      }
+
+      #labelpanel{
+          opacity: 1;
+          transition:all 1s cubic-bezier(.17,.67,.58,.98);
+      }
+      #swatchesmobile{
+          opacity: 0;
+          transition:all 1s cubic-bezier(.17,.67,.58,.98);
+      }
+
+
+      /* MEDIA QUERIES START HERE */
+
+      @media only screen and (max-width: 645px) {
+      .eventmarker circle,
+      #grid
+        {
+          opacity: 0;
+          transition:all 1s cubic-bezier(.17,.67,.58,.98)
+
+      }
+      .progress-line{
+        stroke-width: 3;
+        transition:all 1s cubic-bezier(.17,.67,.58,.98);
+
+      }
+      .monthsection text {
+        font-size:15px;
+      }
+
+      #labelpanel{
+          opacity: 0;
+          transition:all 1s cubic-bezier(.17,.67,.58,.98);
+      }
+      #swatchesmobile{
+          opacity: 1;
+          transition:all 1s cubic-bezier(.17,.67,.58,.98);
+      }
+    }
+
+    </style>
+
+
+
+
+
+
+  <!-- define reusable gradients and masks here -->
+
+    <defs>
+        <linearGradient id="gradient-background" x1="332.5" y1="13" x2="332.5" y2="203" gradientUnits="userSpaceOnUse" >
+            <stop offset="0" stop-color="rgb(119, 112, 115)" stop-opacity="1" />
+            <stop offset="1" stop-color="rgb(85, 85, 85)" stop-opacity="1" />
+        </linearGradient>
+        <linearGradient id="gradient2-labelpanel" x1="540.5" y1="25.5" x2="540.5" y2="125.5" gradientUnits="userSpaceOnUse" >
+            <stop offset="0" stop-color="rgb(43, 43, 43)" stop-opacity="1" />
+            <stop offset="1" stop-color="rgb(85, 85, 85)" stop-opacity="1" />
+        </linearGradient>
+        <filter id="shadow-outer" filterUnits="userSpaceOnUse">
+            <feGaussianBlur stdDeviation="2.5" />
+            <feOffset dx="1.1" dy="1.1" result="blur" />
+            <feFlood flood-color="rgb(0, 0, 0)" flood-opacity="0.44" />
+            <feComposite in2="blur" operator="in" result="colorShadow" />
+            <feComposite in="SourceGraphic" in2="colorShadow" operator="over" />
+        </filter>
+    </defs>
+
+
+<!-- end DEFs -->
+
+
+    <g id="talkshowhostsgooglesearches">
+
+
+      <g id="swatchesmobile">
+            <rect id="labeljayleno2" stroke="none" fill="none" x="103" y="258" width="248" height="56" rx="6" />
+            <text fill="rgb(255, 255, 255)" font-family="Helvetica-Bold, Helvetica, sans-serif" font-weight="bold" font-size="17" x="103" y="258">
+                <tspan x="103" y="274">Jay Leno</tspan>
+            </text>
+            <ellipse id="swatchleno2" stroke="none" fill="rgb(156, 185, 250)" cx="59" cy="270" rx="11" ry="11.5" />
+            <rect id="labeljimmyfallon2" stroke="none" fill="none" x="103" y="312" width="248" height="55" rx="6" />
+            <text fill="rgb(255, 255, 255)" font-family="Helvetica-Bold, Helvetica, sans-serif" font-weight="bold" font-size="17" x="103" y="312">
+                <tspan x="103" y="328">Jimmy Fallon</tspan>
+            </text>
+            <ellipse id="swatchfallon2" stroke="none" fill="rgb(82, 245, 31)" cx="59" cy="324" rx="11" ry="11.5" />
+            <rect id="labeljonstewart2" stroke="none" fill="none" x="369" y="310.5" width="248" height="57" rx="6" />
+            <text fill="rgb(255, 255, 255)" font-family="Helvetica-Bold, Helvetica, sans-serif" font-weight="bold" font-size="17" x="369" y="310.5">
+                <tspan x="369" y="326.5">Jon Stewart </tspan>
+            </text>
+            <circle id="swatchstewart2" stroke="none" fill="rgb(208, 46, 42)" cx="324.5" cy="323" r="10.5" />
+            <rect id="labelstephencolbert2" stroke="none" fill="none" x="369" y="256" width="276" height="54" rx="6" />
+            <text fill="rgb(255, 255, 255)" font-family="Helvetica-Bold, Helvetica, sans-serif" font-weight="bold" font-size="17" x="369" y="256">
+                <tspan x="369" y="272">Stephen Colbert</tspan>
+            </text>
+            <ellipse id="swatchcolbert2" stroke="none" fill="rgb(255, 174, 0)" cx="324.5" cy="268" rx="10.5" ry="11.5" />
+        </g>
+
+
+
+
+
+        <rect id="rectangle" stroke="rgb(0, 0, 0)" fill="rgb(128, 128, 128)" x="8" y="0" width="645" height="245" rx="4"/>
+        <rect id="background" stroke="none" fill="url(#gradient-background)" x="10" y="13" width="641" height="190" />
+        <g id="hostdata">
+            <g id="grid">
+                <rect  x="162" y="13" width="1" height="190" />
+                <rect  x="364" y="13" width="1" height="190" />
+                <rect  x="589" y="13" width="1" height="190" />
+                <rect  x="10" y="202" width="642" height="1" />
+                <rect  x="10" y="164" width="642" height="1" />
+                <rect  x="10" y="126" width="642" height="1" />
+                <rect  x="10" y="89" width="642" height="1" />
+                <rect  x="10" y="51" width="642" height="1" />
+                <rect  x="10" y="13" width="642" height="1" />
+            </g>
+            <g id="hosts">
+                <path  class="progress-line" id="jayleno" stroke="rgb(156, 185, 250)"  d="M 10.5,194.9 L 17.7,196.8 25,196.8 32.2,196.8 39.4,196.8 46.7,194.9 53.9,194.9 61.1,194.9 68.4,196.8 75.6,193.1 82.8,194.9 90.1,194.9 97.3,193.1 104.5,191.2 111.8,189.3 119,194.9 126.2,172.3 133.5,191.2 140.7,189.3 147.9,187.4 155.2,187.4 162.4,183.6 169.6,189.3 176.8,194.9 184.1,183.6 191.3,183.6 198.5,170.4 205.8,13.5 213,111.8 220.2,162.8 227.5,183.6 234.7,189.3 241.9,193.1 249.2,193.1 256.4,196.8 263.6,194.9 270.9,194.9 278.1,193.1 285.3,185.5 292.6,191.2 299.8,193.1 307,193.1 314.3,193.1 321.5,194.9 328.7,196.8 336,196.8 343.2,196.8 350.4,194.9 357.7,196.8 364.9,198.7 372.1,196.8 379.4,196.8 386.6,196.8 393.8,198.7 401.1,198.7 408.3,198.7 415.5,198.7 422.8,198.7 430,198.7 437.2,198.7 444.5,198.7 451.7,198.7 458.9,198.7 466.2,198.7 473.4,198.7 480.6,200.6 487.8,200.6 495.1,200.6 502.3,200.6 509.5,200.6 516.8,198.7 524,198.7 531.2,200.6 538.5,198.7 545.7,198.7 552.9,198.7 560.2,198.7 567.4,198.7 574.6,198.7 581.9,200.6 589.1,200.6 596.3,200.6 603.6,198.7 610.8,194.9 618,198.7 625.3,198.7 632.8,198.7 640,198.7" />
+                <path class="progress-line" id="jonstewart" stroke="rgb(208, 46, 42)" d="M 10.5,194.9 L 17.7,196.8 25,198.7 32.2,196.8 39.4,196.8 46.7,194.9 53.9,196.8 61.1,198.7 68.4,198.7 75.6,198.7 82.8,198.7 90.1,196.8 97.3,196.8 104.5,196.8 111.8,196.8 119,198.7 126.2,198.7 133.5,196.8 140.7,196.8 147.9,194.9 155.2,193.1 162.4,193.1 169.6,196.8 176.8,198.7 184.1,194.9 191.3,194.9 198.5,194.9 205.8,194.9 213,196.8 220.2,198.7 227.5,198.7 234.7,196.8 241.9,194.9 249.2,194.9 256.4,196.8 263.6,196.8 270.9,198.7 278.1,198.7 285.3,198.7 292.6,196.8 299.8,196.8 307,196.8 314.3,196.8 321.5,198.7 328.7,198.7 336,198.7 343.2,196.8 350.4,196.8 357.7,194.9 364.9,196.8 372.1,198.7 379.4,198.7 386.6,196.8 393.8,196.8 401.1,196.8 408.3,194.9 415.5,196.8 422.8,198.7 430,198.7 437.2,196.8 444.5,196.8 451.7,196.8 458.9,194.9 466.2,194.9 473.4,196.8 480.6,198.7 487.8,198.7 495.1,198.7 502.3,198.7 509.5,198.7 516.8,198.7 524,198.7 531.2,198.7 538.5,194.9 545.7,194.9 552.9,196.8 560.2,196.8 567.4,198.7 574.6,198.7 581.9,198.7 589.1,196.8 596.3,194.9 603.6,196.8 610.8,196.8 618,196.8 625.3,198.7 632.8,198.7 640,198.7" />
+                <path  class="progress-line" id="stephencolbert" stroke="rgb(255, 174, 0)"  d="M 10.5,198.7 L 17.7,200.6 25,200.6 32.2,200.6 39.4,200.6 46.7,200.6 53.9,200.6 61.1,200.6 68.4,200.6 75.6,200.6 82.8,200.6 90.1,200.6 97.3,200.6 104.5,198.7 111.8,200.6 119,200.6 126.2,196.8 133.5,198.7 140.7,198.7 147.9,200.6 155.2,198.7 162.4,200.6 169.6,198.7 176.8,196.8 184.1,198.7 191.3,198.7 198.5,198.7 205.8,198.7 213,198.7 220.2,198.7 227.5,200.6 234.7,198.7 241.9,198.7 249.2,196.8 256.4,196.8 263.6,198.7 270.9,200.6 278.1,200.6 285.3,196.8 292.6,196.8 299.8,198.7 307,198.7 314.3,198.7 321.5,200.6 328.7,200.6 336,200.6 343.2,198.7 350.4,198.7 357.7,198.7 364.9,198.7 372.1,200.6 379.4,200.6 386.6,198.7 393.8,198.7 401.1,198.7 408.3,198.7 415.5,194.9 422.8,198.7 430,200.6 437.2,198.7 444.5,200.6 451.7,200.6 458.9,200.6 466.2,200.6 473.4,200.6 480.6,200.6 487.8,200.6 495.1,200.6 502.3,198.7 509.5,200.6 516.8,200.6 524,200.6 531.2,200.6 538.5,200.6 545.7,198.7 552.9,198.7 560.2,187.4 567.4,189.3 574.6,196.8 581.9,198.7 589.1,193.1 596.3,194.9 603.6,198.7 610.8,198.7 618,196.8 625.3,198.7 632.8,198.7 640,198.7" />
+                <path  class="progress-line" id="jimmyfallon" stroke="rgb(82, 245, 31)"  d="M 10.5,183.6 L 17.7,179.8 25,187.4 32.2,189.3 39.4,168.5 46.7,172.3 53.9,179.8 61.1,181.7 68.4,183.6 75.6,187.4 82.8,187.4 90.1,187.4 97.3,189.3 104.5,187.4 111.8,181.7 119,185.5 126.2,187.4 133.5,189.3 140.7,187.4 147.9,174.2 155.2,172.3 162.4,176 169.6,149.6 176.8,179.8 184.1,176 191.3,181.7 198.5,179.8 205.8,159 213,142 220.2,166.6 227.5,177.9 234.7,179.8 241.9,185.5 249.2,185.5 256.4,187.4 263.6,185.5 270.9,181.7 278.1,174.2 285.3,38.1 292.6,79.7 299.8,115.6 307,111.8 314.3,79.7 321.5,125 328.7,155.3 336,155.3 343.2,151.5 350.4,143.9 357.7,149.6 364.9,151.5 372.1,153.4 379.4,168.5 386.6,147.7 393.8,155.3 401.1,164.7 408.3,164.7 415.5,160.9 422.8,174.2 430,183.6 437.2,176 444.5,174.2 451.7,176 458.9,176 466.2,172.3 473.4,179.8 480.6,187.4 487.8,181.7 495.1,181.7 502.3,181.7 509.5,162.8 516.8,140.1 524,157.1 531.2,172.3 538.5,170.4 545.7,172.3 552.9,174.2 560.2,170.4 567.4,168.5 574.6,174.2 581.9,185.5 589.1,179.8 596.3,176 603.6,172.3 610.8,172.3 618,174.2 625.3,179.8 632.8,187.4 640,183.6" />
+            </g>
+        </g>
+        <g id="labelgroup">
+            <g class="monthsection">
+                <rect id="labelfeb" stroke="none" fill="none" x="161" y="203" width="252" height="24" />
+                <text x="287" y="203">
+                    <tspan x="251.98" y="223">Feb 2014</tspan>
+                </text>
+            </g>
+            <g class="monthsection">
+                <rect id="labelmarch" stroke="none" fill="none" x="364" y="203" width="252" height="24" />
+                <text x="490" y="203">
+                    <tspan x="454.99" y="223">Mar 2014</tspan>
+
+                </text>
+            </g>
+
+        </g>
+        <g  id="labelpanel" >
+            <rect id="labelpanel-bg" stroke="none" fill="url(#gradient2-labelpanel)" x="464.5" y="25.5" width="152" height="100" rx="6" />
+            <g id="swatches">
+                <rect id="labeljayleno" stroke="none" fill="none" x="499" y="39" width="87" height="19" rx="6" />
+                <text fill="rgb(170, 170, 170)" font-family="Helvetica-Bold, Helvetica, sans-serif" font-weight="bold" font-size="12" x="499" y="39">
+                    <tspan x="499" y="50">Jay Leno</tspan>
+                </text>
+                <circle id="swatchleno" stroke="none" fill="rgb(156, 185, 250)" cx="484" cy="45.5" r="4" />
+                <rect id="labeljimmyfallon" stroke="none" fill="none" x="499" y="59" width="87" height="19" rx="6" />
+                <text fill="rgb(170, 170, 170)" font-family="Helvetica-Bold, Helvetica, sans-serif" font-weight="bold" font-size="12" x="499" y="59">
+                    <tspan x="499" y="70">Jimmy Fallon</tspan>
+                </text>
+                <circle id="swatchfallon" stroke="none" fill="rgb(82, 245, 31)" cx="484" cy="65.5" r="4" />
+                <rect id="labeljonstewart" stroke="none" fill="none" x="499" y="78.5" width="87" height="19" rx="6" />
+                <text fill="rgb(170, 170, 170)" font-family="Helvetica-Bold, Helvetica, sans-serif" font-weight="bold" font-size="12" x="499" y="78.5">
+                    <tspan x="499" y="89.5">Jon Stewart </tspan>
+                </text>
+                <circle id="swatchstewart" stroke="none" fill="rgb(208, 46, 42)" cx="484" cy="84.5" r="4" />
+                <rect id="labelstephencolbert" stroke="none" fill="none" x="499" y="98" width="97" height="19" rx="6" />
+                <text fill="rgb(170, 170, 170)" font-family="Helvetica-Bold, Helvetica, sans-serif" font-weight="bold" font-size="12" x="499" y="98">
+                    <tspan x="499" y="109">Stephen Colbert</tspan>
+                </text>
+                <circle id="swatchcolbert" stroke="none" fill="rgb(255, 174, 0)" cx="484" cy="104.5" r="4" />
+            </g>
+        </g>
+
+
+      <!-- EVENTS START HERE -->
+
+
+        <!-- NBC's Jimmy Fallon, Seth Meyers remain dominant -->
+        <g id="event-e" class="eventmarker">
+            <circle id="oval5" stroke="rgb(255, 255, 255)" stroke-width="2" fill="none" cx="611" cy="172" r="4" />
+            <g id="group10">
+                <g id="group5" opacity="0.9">
+                    <rect id="roundedRectangle5" stroke="none" fill="rgb(128, 128, 128)" filter="url(#shadow-outer)" x="501" y="118" width="104" height="48" rx="4" />
+                    <rect stroke="rgb(0, 0, 0)" stroke-opacity="0" stroke-width="2" fill="none" x="501" y="118" width="104" height="48" rx="4" />
+                </g>
+                <rect id="text5" stroke="none" fill="none" x="508" y="126" width="91" height="34" />
+                <text fill="rgb(255, 255, 255)" font-family="Helvetica, sans-serif" font-size="9.5" x="509.57" y="126">
+                    <tspan x="509.57" y="135">NBC&apos;s Jimmy Fallon, </tspan>
+                    <tspan x="511" y="146">Seth Meyers remain </tspan>
+                    <tspan x="533.96" y="157">dominant</tspan>
+                </text>
+            </g>
+
+        </g>
+        <g id="event-d" class="eventmarker">
+          <circle id="oval4" stroke="rgb(255, 255, 255)" stroke-width="2" fill="none" cx="559" cy="188" r="4" />
+            <g id="group9">
+                <g id="group4" opacity="0.9">
+                    <rect id="roundedRectangle4" stroke="none" fill="rgb(128, 128, 128)" filter="url(#shadow-outer)" x="449" y="134" width="104" height="48" rx="4" />
+                    <rect stroke="rgb(0, 0, 0)" stroke-opacity="0" stroke-width="2" fill="none" x="449" y="134" width="104" height="48" rx="4" />
+                </g>
+                <rect id="text4" stroke="none" fill="none" x="456" y="148" width="91" height="34" />
+                <text fill="rgb(255, 255, 255)" font-family="Helvetica, sans-serif" font-size="9.5" x="467.17" y="148">
+                    <tspan x="467.17" y="157">Stephen Colbert </tspan>
+                    <tspan x="462.16" y="168">denies racist tweet </tspan>
+                </text>
+            </g>
+
+        </g>
+        <g id="event-c"  class="eventmarker">
+          <circle id="oval" stroke="rgb(255, 255, 255)" stroke-width="2" fill="none" cx="278.5" cy="156.5" r="4" />
+            <g id="group8">
+                <g id="group" opacity="0.9">
+                    <rect id="roundedRectangle" stroke="none" fill="rgb(128, 128, 128)" filter="url(#shadow-outer)" x="291" y="128" width="104" height="48" rx="4" />
+                    <rect stroke="rgb(0, 0, 0)" stroke-opacity="0" stroke-width="2" fill="none" x="291" y="128" width="104" height="48" rx="4" />
+                </g>
+                <rect id="text" stroke="none" fill="none" x="296" y="139" width="91" height="34" />
+                <text fill="rgb(255, 255, 255)" font-family="Helvetica, sans-serif" font-size="9.5" x="298.21" y="139">
+                    <tspan x="298.21" y="148">Jimmy Fallon makes </tspan>
+                    <tspan x="299.78" y="159">Tonight Show debut</tspan>
+                </text>
+            </g>
+
+        </g>
+        <g id="event-b" class="eventmarker">
+          <circle id="oval3" stroke="rgb(255, 255, 255)" stroke-width="2" fill="none" cx="199" cy="148" r="4" />
+            <g id="group6">
+                <g id="group3" opacity="0.9">
+                    <rect id="roundedRectangle3" stroke="none" fill="rgb(128, 128, 128)" filter="url(#shadow-outer)" x="90" y="58" width="104" height="48" rx="4" />
+                    <rect stroke="rgb(0, 0, 0)" stroke-opacity="0" stroke-width="2" fill="none" x="90" y="58" width="104" height="48" rx="4" />
+                </g>
+                <rect id="text3" stroke="none" fill="none" x="95" y="66" width="91" height="36" />
+                <text fill="rgb(255, 255, 255)" font-family="Helvetica, sans-serif" font-size="9.5" x="110.14" y="66">
+                    <tspan x="110.14" y="75">Jay Leno says </tspan>
+                    <tspan x="100.44" y="86">goodbye to Tonight </tspan>
+                    <tspan x="128.62" y="97">Show</tspan>
+                </text>
+            </g>
+
+        </g>
+        <g id="event-a" class="eventmarker">
+          <circle id="oval2" stroke="rgb(255, 255, 255)" stroke-width="2" fill="none" cx="65" cy="183" r="4" />
+            <g id="group7">
+                <g id="group2" opacity="0.9">
+                    <rect id="roundedRectangle2" stroke="none" fill="rgb(128, 128, 128)" filter="url(#shadow-outer)" x="67" y="128" width="104" height="48" rx="4" />
+                    <rect stroke="rgb(0, 0, 0)" stroke-opacity="0" stroke-width="2" fill="none" x="67" y="128" width="104" height="48" rx="4" />
+                </g>
+                <rect id="text2" stroke="none" fill="none" x="72" y="129" width="91" height="45" />
+                <text fill="rgb(255, 255, 255)" font-family="Helvetica, sans-serif" font-size="9.5" x="72.61" y="129">
+                    <tspan x="72.61" y="138">Jay Leno to close out </tspan>
+                    <tspan x="86.61" y="149">final week with </tspan>
+                    <tspan x="80.28" y="160">Jimmy Fallon and </tspan>
+                  <tspan x="92.69" y="171" style="-webkit-transform:scale(3)">Billy Crystal</tspan>
+                </text>
+
+
+            </g>
+
+        </g>
+    </g>
+</svg>
