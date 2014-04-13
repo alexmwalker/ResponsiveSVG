@@ -1,0 +1,100 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="flappybird-2-Page%201" viewBox="0 0 1296 639" style="background-color:#ffffee" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="100%" height="100%">
+  
+<style>
+  .hide-on-small{
+      display:none
+		}
+
+  #titles .subtitle{
+    font-size: 24px; 
+    color: #000000; 
+    font-family: Helvetica; 
+    text-align: left;
+  }
+  #titles .title{
+    font-size: 50px; 
+    color: #000000; 
+    font-family: Helvetica; 
+    text-align: left;
+  }
+  .text{
+    font-size: 24px; 
+    color: #000000; 
+    font-family: Helvetica; 
+    text-align: right; 
+    
+  }
+  .horizontals{
+    stroke: #333333;
+    stroke-width: 0;
+    fill: none;
+    stroke-dasharray: 2 5;
+  }
+  @media only screen and (min-width: 700px) {
+    .hide-on-small{
+      display:block
+		}  
+
+  	#trendline{
+      stroke-width: 3;
+		}
+     
+    #titles .title{
+      font-size: 42px; 
+    }
+    #titles .subtitle{
+      font-size: 18px; 
+    }
+    .horizontals{
+      stroke-width:1;
+    }
+    
+    .text{
+      font-size: 16px; 
+    }
+	}
+
+  
+</style>
+  
+	<g id="graph"> <!-- graph line and fill -->
+    <path class="hide-on-small" id="trendline-filled" d="M 230 422 L 270 420 L 310 418 L 351 418 L 391 409 L 432 402 L 472 385 L 512 374 L 553 216 L 594 323 L 636 320 L 673 329 L 715 326 L 754 279 L 794 278 L 836 242 L 876 229 L 917 141 L 956 213 L 998 157 L 1037 197 L 1078 242 L 1118 294 L 1158 338 L 1199 362 L 1242 384 L 1242 422 L 67 422 Z" fill="#cc3300" fill-opacity=".5"/>
+		<path id="trendline" d="M 67 422 L 107 423 L 147 423 L 189 423 L 230 422 L 270 420 L 310 418 L 351 418 L 391 409 L 432 402 L 472 385 L 512 374 L 553 216 L 594 323 L 636 320 L 673 329 L 715 326 L 754 279 L 794 278 L 836 242 L 876 229 L 917 141 L 956 213 L 998 157 L 1037 197 L 1078 242 L 1118 294 L 1158 338 L 1199 362 L 1242 384 " stroke="#990000" stroke-width="6" fill="none"/>
+	</g>
+	<g id="tweet-total-range"> <!-- tweet total marker text -->
+		<text x="20" y="120" width="27" fill="#000000" class="text" ><tspan><![CDATA[25k]]></tspan></text>
+		<text x="20" y="183" width="27" fill="#000000" class="text" ><tspan><![CDATA[20k]]></tspan></text>
+		<text x="20" y="246" width="27" fill="#000000" class="text" ><tspan><![CDATA[15k]]></tspan></text>
+		<text x="20" y="309" width="27" fill="#000000" class="text" ><tspan><![CDATA[10k]]></tspan></text>
+		<text x="20" y="372" width="27" fill="#000000" class="text" ><tspan><![CDATA[5k]]></tspan></text>
+  		<text x="20" y="435" width="27" fill="#000000" class="text" ><tspan><![CDATA[0k]]></tspan></text>
+	</g>
+	<g id="date-range"> <!-- date range text markers -->
+		<text x="114" y="451" width="47" fill="#000000" class="text"><tspan><![CDATA[Jan 18]]></tspan></text>
+		<text x="233" y="451" width="47" fill="#000000" class="text" ><tspan><![CDATA[Jan 21]]></tspan></text>
+		<text x="347" y="451" width="47" fill="#000000" class="text" ><tspan><![CDATA[Jan 24]]></tspan></text>
+		<text x="459" y="451" width="47" fill="#000000" class="text" ><tspan><![CDATA[Jan 27]]></tspan></text>
+		<text x="580" y="451" width="47" fill="#000000" class="text" ><tspan><![CDATA[Jan 29]]></tspan></text>
+		<text x="694" y="451" width="41" fill="#000000" class="text" ><tspan><![CDATA[Feb 1]]></tspan></text>
+		<text x="811" y="451" width="41" fill="#000000" class="text" ><tspan><![CDATA[Feb 4]]></tspan></text>
+		<text x="935" y="451" width="41" fill="#000000" class="text" ><tspan><![CDATA[Feb 7]]></tspan></text>
+		<text x="1052" y="451" width="49" fill="#000000" class="text" ><tspan><![CDATA[Feb 10]]></tspan></text>
+		<text x="1165" y="451" width="49" fill="#000000" class="text" ><tspan><![CDATA[Feb 13]]></tspan></text>
+	</g>
+	<g id="graph-base"><!-- graph axis and horizontal markers -->
+		<path id="axis" d="M 68 93 L 68 423 L 1240 423 " stroke="#333333" stroke-width="1" fill="none"/>
+		<path id="20k" d="M 68 168 L 1240 168 " class="horizontals" />
+		<path id="15k" d="M 68 233 L 1240 233 " class="horizontals"/>
+		<path id="10k" d="M 68 297 L 1240 297 " class="horizontals"/>
+		<path id="5k" d="M 68 360 L 1240 360 " class="horizontals"/>
+
+	</g>
+	<g id="titles"><!-- heading -->
+		<text class="subtitle" x="58" y="81" width="236" fill="#000000"><tspan><![CDATA[January 17th - February 16th]]></tspan></text>
+		<text class="title"  x="53" y="40" width="406" fill="#000000"><tspan><![CDATA[Tweets per day: ‘flappybird’ ]]></tspan></text>
+	</g>
+</svg>
