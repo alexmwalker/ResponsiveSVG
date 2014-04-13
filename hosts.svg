@@ -1,94 +1,8 @@
 
 
-
   <svg id="talkshowshosts" viewBox="0 0 655 245" width="100%" height="445" preserveAspectRatio="xMidYmin meet">
 
-    <style>
 
-      /*event marker mechanics */
-
-      .eventmarker circle + g {
-        opacity: 0; /* hide the events by default */
-        transition:all 1s cubic-bezier(.17,.67,.58,.98);
-      }
-
-
-      .eventmarker circle:hover{
-        fill: red;
-
-      }
-
-
-      .eventmarker circle:hover + g {
-        opacity: 1;
-          transition:all 1s cubic-bezier(.17,.67,.58,.98);
-        }
-
-      #grid  {
-        stroke: none;
-        fill: rgb(124, 124, 124);
-        transition:all 1s cubic-bezier(.17,.67,.58,.98)
-      }
-      .progress-line{
-        stroke-width: 1.6;
-        stroke-miterlimit: 9;
-        fill: none;
-        transition:all 1s cubic-bezier(.17,.67,.58,.98)
-      }
-
-      .monthsection text {
-        fill:rgb(255, 255, 255);
-        font-family: ArialMT, Arial, 'Helvetica Neue', Helvetica, sans-serif;
-        font-size:12px;
-      }
-
-      #labelpanel{
-          opacity: 1;
-          transition:all 1s cubic-bezier(.17,.67,.58,.98);
-      }
-      #swatchesmobile{
-          opacity: 0;
-          transition:all 1s cubic-bezier(.17,.67,.58,.98);
-      }
-
-
-      /* MEDIA QUERIES START HERE */
-
-      @media only screen and (max-width: 645px) {
-      .eventmarker circle,
-      #grid
-        {
-          opacity: 0;
-          transition:all 1s cubic-bezier(.17,.67,.58,.98)
-
-      }
-      .progress-line{
-        stroke-width: 3;
-        transition:all 1s cubic-bezier(.17,.67,.58,.98);
-
-      }
-      .monthsection text {
-        font-size:15px;
-      }
-
-      #labelpanel{
-          opacity: 0;
-          transition:all 1s cubic-bezier(.17,.67,.58,.98);
-      }
-      #swatchesmobile{
-          opacity: 1;
-          transition:all 1s cubic-bezier(.17,.67,.58,.98);
-      }
-    }
-
-    </style>
-
-
-
-
-
-
-  <!-- define reusable gradients and masks here -->
 
     <defs>
         <linearGradient id="gradient-background" x1="332.5" y1="13" x2="332.5" y2="203" gradientUnits="userSpaceOnUse" >
@@ -109,7 +23,7 @@
     </defs>
 
 
-<!-- end DEFs -->
+
 
 
     <g id="talkshowhostsgooglesearches">
