@@ -22,6 +22,14 @@
 			 stroke: #FFF;
 			 stroke-width: 7;
 			 fill: none;
+			 animation: ufo-big 5s ease infinite;
+			}
+			.ufo-big {
+  			animation: buzz 5s ease infinite;
+					}
+			@keyframes buzz {
+  			0%,20%,25%,29% ,86%,88%, 100%   {opacity: 1}
+  			15%,20%, 26%,28%,85%, 87%       {opacity: 0}
 			}
 		</style>
   </defs>
