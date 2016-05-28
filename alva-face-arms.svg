@@ -1,7 +1,24 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 341.3 161.5">
   <defs>
     <style>
-      .cls-1{fill:none;stroke:#000;stroke-width:2px;}.cls-2{fill:#040404;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill:#8c6900;}.cls-5{fill:url(#linear-gradient-2);}.cls-6{fill:url(#linear-gradient-3);}
+      .cls-1{fill:none;stroke:#000;stroke-width:2px;}
+      .cls-2{fill:#040404;}
+      .cls-3{fill:url(#linear-gradient);}
+      .cls-4{fill:#8c6900;}
+      .cls-5{fill:url(#linear-gradient-2);}
+      .cls-6{fill:url(#linear-gradient-3);}
+      
+      .blink{
+      animation: blink 4s infinite;
+      }
+      @keyframes blink{
+      0%, 50%, 100%{ transform: scaleY(1);
+      transform-origin: 100%;
+      }
+      51%, 55%{ transform: scaleY( 0.2)}
+      56%, 60%{ transform: scaleY( 1)}
+      }
+      
     </style>
     <linearGradient id="linear-gradient" x1="319.13" y1="361.3" x2="319.13" y2="336.8" gradientTransform="matrix(.9 0 0 -1 74.2 714.5)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#d9a300"/>
@@ -15,10 +32,10 @@
   </title>
   <path id="mouth" class="cls-1" d="M41.1 99.5L26.5 26.1s11.9 37.2 43 37.2 42.4-38 42.4-38L96.7 99.7"/>
   <path id="mouth-2" data-name="mouth" class="cls-1" d="M296 99.7l-.8-76.8s1 38.6 19.5 38.6c11 0 18.6-20.6 18.6-20.6L317 99.7"/>
-  <ellipse id="eye-left" class="cls-2" cx="295.2" cy="10" rx="6.5" ry="10"/>
-  <ellipse id="eye-right" class="cls-2" cx="336.4" cy="25" rx="4.9" ry="7.9"/>
-  <circle id="eye-left-2" data-name="eye-left" class="cls-2" cx="27" cy="15.2" r="7.2"/>
-  <circle id="eye-left-3" data-name="eye-left" class="cls-2" cx="111.8" cy="15.2" r="6.5"/>
+  <ellipse id="eye-left" class="cls-2 blink" cx="295.2" cy="10" rx="6.5" ry="10"/>
+  <ellipse id="eye-right" class="cls-2 blink" cx="336.4" cy="25" rx="4.9" ry="7.9"/>
+  <circle id="eye-left-2" class="cls-2 blink" cx="27" cy="15.2" r="7.2"/>
+  <circle id="eye-left-3" class="cls-2 blink" cx="111.8" cy="15.2" r="6.5"/>
   <rect class="cls-3" x="348" y="349" width="29.5" height="16.33" rx="8.2" ry="8.2" transform="rotate(-171 333.4 256.3)"/>
   <ellipse class="cls-4" cx="372" cy="358.7" rx="8.2" ry="5.4" transform="rotate(-81 230 280.7)"/>
   <rect class="cls-5" x="41.6" y="338.8" width="40.1" height="16.33" rx="8.2" ry="8.2" transform="rotate(-13 -839.9 422.4)"/>
