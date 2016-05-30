@@ -1,0 +1,42 @@
+<svg id="hayta" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">
+  <defs>
+    <style>
+      .cls-1,.cls-2{fill:none;}
+      .cls-1{stroke:#000;stroke-width:33px;}
+      
+      .flickbook{
+  animation: flickbook .6s infinite steps(1);
+}
+@keyframes flickbook {
+  0% , 100%, 33.3%, 66.66%{ opacity: 0}
+  33.33%, 66.6%{ opacity: 1}
+}
+#frame1{
+  animation-delay: .2s;
+}
+#frame2{
+  animation-delay: -.2s;
+}
+    </style>
+  </defs>
+  <title>
+    haters-base2
+  </title>
+  <g id="frame1" class="flickbook">
+    <path id="rear" class="cls-1 " d="M260.6 50L98.4 181.5s226.5 46.8 221.3 59.5-183-204.3-196.1-214.7 20.9 269.2 65.4 296.5C222.2 343.1 260.6 50 260.6 50z"/>
+    <path id="rear2" class="cls-1" d="M246.3 244.8L195.2 94.4S130.7 287.1 118.1 282s194.2-153.3 204.6-166.2-268.3 20.7-295.5 65c-20.3 32.9 219.1 64 219.1 64z"/>
+    <path id="Ellipse" d="M104.8 172.7c0-45.3 31.2-82.1 69.7-82.1s69.7 36.7 69.7 82.1-31.2 82.1-69.7 82.1-69.7-36.8-69.7-82.1z"/>
+  </g>
+  <g id="frame2"  class="flickbook">
+    <path id="rear3" class="cls-1" d="M237.4 107.9L85.8 224.6s182.4-2 177.3 10.6S141.3 88 128.3 77.6s20.6 209.1 65.1 236.4c33.2 20.3 44-206.1 44-206.1z"/>
+    <path id="rear4" class="cls-1" d="M285.8 294.3L198 59.5s-85.9 270.2-98.5 265.1S280 157.3 290.4 144.3s-197 7.3-224.2 51.5c-20.3 33 219.6 98.5 219.6 98.5z"/>
+    <path id="Ellipse2" d="M107.8 186.7c0-45.3 31.2-82.1 69.7-82.1s69.7 36.7 69.7 82.1-31.2 82.1-69.7 82.1-69.7-36.8-69.7-82.1z"/>
+  </g>
+  <g id="frame3" class="flickbook">
+    <path id="rear5" class="cls-1" d="M253.5 102L61.2 128.9s205.4 149.6 197.4 160.6S190.2 76.6 180 63.3s-53.5 154.2-16.9 191.4c27.3 27.8 90.4-152.7 90.4-152.7z"/>
+    <path id="rear6" class="cls-1" d="M284.3 228.8l-183.1-151S83.5 284.7 72.6 276.7 283 160.1 296.2 150.1s-203.9 0-241 36.3c-27.6 27 229.1 42.4 229.1 42.4z"/>
+    <path id="Ellipse3" d="M105.9 155.8c10.9-43.9 50.1-71.9 87.4-62.5s58.7 52.5 47.7 96.4-50.1 71.9-87.4 62.5-58.7-52.5-47.7-96.4z"/>
+  </g>
+  
+  <path class="cls-2" d="M0 0h350v350H0z"/>
+</svg>
