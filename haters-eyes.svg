@@ -1,13 +1,30 @@
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 350">
-  <defs>
-    <style>
-      .cls-1{fill:none;}.cls-2{fill:#fff;stroke:#000;}
-    </style>
-  </defs>
+
+
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 818.5 46.4" xml:space="preserve">
+  <style type="text/css">
+    .st0{fill:#FFFFFF;stroke:#000000;}
+      .blink{
+      animation: blink 4s infinite 1.5s;
+      }
+      @keyframes blink{
+      0%, 50%, 100%{ transform: scaleY(1);
+      transform-origin: 100%;
+      }
+      51%, 55%{ transform: scaleY( 0.1)}
+      56%, 60%{ transform: scaleY( 1)}
+      }
+  </style>
+
+  <symbol id="eyes-right"  viewBox="-29.3 -24 58.6 48">
+    <path class="st0" d="M-28.9 23.6l21-15.9 2.1-22 1.4 18.5L6.1.2l-9.4-23-25.6 46.4zM28.3 11.5l-6.1-5.9L21.9-9 19.5 3.6 14.4.9 21-15.4l7.3 26.9z"/>
+  </symbol>
   <title>
     hater-eyes
   </title>
   <path id="frame" class="cls-1" d="M0 0H1050V350H0z"/>
-  <path class="cls-2" d="M117.3 137.3l24.1 7.3 2.4 14.4 2.8-12.2 18.8 2.6-18 15.6zM232.9 136.7L208.8 144l-2.4 14.4-6.8-12.2-14.9 2.6 18.1 15.6zM467.7 147.5l24.1 4.2 2.4 8.2 4.8-7.6 16.8 2.1-18 8.9zM583.2 147.1l-24.1 4.2-2.4 8.2-4.8-7.6L535 154.1l18.1 8.9zM820.2 158.2l28.2-3 4.1 5.5 2.3-5.6 14.5 3.1-16.7 2.4zM935.4 158l-20.1-1.8-2.4 4.2-3.3-5.2-14.6 3 17.4 2.7z"/>
+  <g class="blink">
+  <path class="st0" d="M369.2 11.6l24.1 7.3 2.4 14.4 2.8-12.2 18.8 2.6-18 15.6-30.1-27.7zM484.8 11l-24.1 7.3-2.4 14.4-6.8-12.2-14.9 2.6 18.1 15.6L484.8 11z"/>
+  <use xlink:href="#eyes-right" width="58.6" height="48" x="-29.3" y="-24" transform="matrix(1 0 0 -1 783 23.5767)" overflow="visible"/>
+  <use xlink:href="#eyes-right"  width="58.6" height="48" x="-29.3" y="-24" transform="matrix(-0.8572 0 0 -1 34.4368 23.106)" overflow="visible"/>
+  </g>
 </svg>
-
