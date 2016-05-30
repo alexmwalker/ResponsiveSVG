@@ -8,11 +8,15 @@
       <feBlend in="SourceGraphic" in2="out" result="Glow1"/>
     </filter>
     <style>
-      .filament{fill:none;stroke:#fff;stroke-width:7px; stroke-linecap:round;
+      .filament{
+        fill:none;
+        stroke:#fff;
+        stroke-width:7px; 
+        stroke-linecap:round;
       }
       .glow{
       filter: url(#filamentglow);
-      animation: glow .6s infinite steps(1);
+      animation: glow 2s infinite;
       }
 
 }
