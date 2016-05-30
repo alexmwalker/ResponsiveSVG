@@ -21,7 +21,7 @@
 
 }
 @keyframes glow {
-  0% , 100%, { opacity: 0}
+  0% , 100% { opacity: 0}
   15%, 85%{ opacity: 1}
 }
     </style>
