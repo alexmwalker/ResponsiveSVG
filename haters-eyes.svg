@@ -1,15 +1,16 @@
-<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 818.5 91" style="enable-background:new 0 0 818.5 91;" xml:space="preserve">
-  <style type="text/css">
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Layer_2" style="enable-background:new 0 0 818.5 91;" x="0px" y="0px" viewBox="0 0 818.5 91" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style type="text/css">
     .st0{fill:#fff;stroke:#000;}
       .blink{
       animation: blink 4s infinite 1.5s;
       }
       .mouth{
-       animation-delay: .5s;
+      animation-delay: .5s;
       animation-duration: 7s;
     }
-    
+
       @keyframes blink{
       0%, 50%, 100%{ transform: scaleY(1);
       transform-origin: 100%;
@@ -18,21 +19,19 @@
       56%, 60%{ transform: scaleY( 1)}
       }
   </style>
-
-  <symbol id="eyes-right"  viewBox="-29.3 -24 58.6 48">
-    <path class="st0" d="M-28.9 23.6l21-15.9 2.1-22 1.4 18.5L6.1.2l-9.4-23-25.6 46.4zM28.3 11.5l-6.1-5.9L21.9-9 19.5 3.6 14.4.9 21-15.4l7.3 26.9z"/>
-  </symbol>
-  <title>
-    hater-eyes
-  </title>
+    <symbol id="eyes-right" viewBox="-29.3 -24 58.6 48">
+      <path class="st0" d="M-28.9 23.6l21-15.9 2.1-22 1.4 18.5L6.1.2l-9.4-23-25.6 46.4zM28.3 11.5l-6.1-5.9L21.9-9 19.5 3.6 14.4.9 21-15.4l7.3 26.9z"/>
+    </symbol>
+  </defs>
   <g class="blink">
-  <path class="st0" d="M369.2 11.6l24.1 7.3 2.4 14.4 2.8-12.2 18.8 2.6-18 15.6-30.1-27.7zM484.8 11l-24.1 7.3-2.4 14.4-6.8-12.2-14.9 2.6 18.1 15.6L484.8 11z"/>
-  <use xlink:href="#eyes-right" width="58.6" height="48" x="-29.3" y="-24" transform="matrix(1 0 0 -1 783 23.5767)" overflow="visible"/>
-  <use xlink:href="#eyes-right"  width="58.6" height="48" x="-29.3" y="-24" transform="matrix(-0.8572 0 0 -1 34.4368 23.106)" overflow="visible"/>
+    <path class="st0" d="M369.2 11.6l24.1 7.3 2.4 14.4 2.8-12.2 18.8 2.6-18 15.6-30.1-27.7zM484.8 11l-24.1 7.3-2.4 14.4-6.8-12.2-14.9 2.6 18.1 15.6L484.8 11z"/>
+    <use width="58.6" height="48" x="-29.3" y="-24" transform="matrix(1.1143235506526061, 0, 0, -1, 779.6503200531006, 23.57670021057129)" style="overflow: visible;" xlink:href="#eyes-right"/>
+    <use width="58.6" height="48" x="-29.3" y="-24" transform="matrix(-1.2459000628897725, 0, 0, -1, 45.82571526130778, 23.106000900268555)" style="overflow: visible;" xlink:href="#eyes-right"/>
   </g>
-  <g  class="mouth blink">
-	<polygon class="st0" points="42,60 48,79 8,60 	"/>
-	<polygon class="st0" points="394,63 469.8,63 469.8,79 433.9,69.5 394,79 	"/>
-	<polygon class="st0" points="811.3,63 782.7,69.5 782.7,83 806,71 	"/>
-</g>
+  <g class="mouth blink">
+    <path class="st0" d="M 56.7 60 L 68.1 79 L 8 60 L 56.7 60 Z"/>
+    <path class="st0" d="M 394 63 L 469.79998779296875 63 L 469.79998779296875 79 L 433.8999938964844 69.5 L 394 79 Z"/>
+    <path class="st0" d="M 811.3 63 L 761.3 66.8 L 773.3 83 L 806 71 L 811.3 63 Z"/>
+    <path d="M 37.9 67.9" style="stroke: black; fill: none;"/>
+  </g>
 </svg>
