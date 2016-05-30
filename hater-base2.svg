@@ -1,8 +1,16 @@
 <svg id="hayta" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">
   <defs>
+    
+    <filter id="AI_GaussianBlur_6" name="AI_GaussianBlur_6">
+      <feGaussianBlur stdDeviation="6" in="SourceGraphic"/>
+    </filter>
+    
     <style>
       .cls-1,.cls-2{fill:none;}
       .cls-1{stroke:#000;stroke-width:33px;}
+      
+      .framegroup{
+      filter:url(#AI_GaussianBlur_6);}
       
       .flickbook{
   animation: flickbook .6s infinite steps(1);
@@ -22,6 +30,7 @@
   <title>
     haters-base2
   </title>
+  <g class="framegroup">
   <g id="frame1" class="flickbook">
     <path id="rear" class="cls-1 " d="M260.6 50L98.4 181.5s226.5 46.8 221.3 59.5-183-204.3-196.1-214.7 20.9 269.2 65.4 296.5C222.2 343.1 260.6 50 260.6 50z"/>
     <path id="rear2" class="cls-1" d="M246.3 244.8L195.2 94.4S130.7 287.1 118.1 282s194.2-153.3 204.6-166.2-268.3 20.7-295.5 65c-20.3 32.9 219.1 64 219.1 64z"/>
@@ -37,6 +46,6 @@
     <path id="rear6" class="cls-1" d="M284.3 228.8l-183.1-151S83.5 284.7 72.6 276.7 283 160.1 296.2 150.1s-203.9 0-241 36.3c-27.6 27 229.1 42.4 229.1 42.4z"/>
     <path id="Ellipse3" d="M105.9 155.8c10.9-43.9 50.1-71.9 87.4-62.5s58.7 52.5 47.7 96.4-50.1 71.9-87.4 62.5-58.7-52.5-47.7-96.4z"/>
   </g>
-  
+  </g>
   <path class="cls-2" d="M0 0h350v350H0z"/>
 </svg>
