@@ -2,7 +2,7 @@
   <defs>
     
     <filter id="AI_GaussianBlur_6" name="AI_GaussianBlur_6">
-      <feGaussianBlur stdDeviation="6" in="SourceGraphic"/>
+      <feGaussianBlur stdDeviation="4" in="SourceGraphic"/>
     </filter>
     
     <style>
