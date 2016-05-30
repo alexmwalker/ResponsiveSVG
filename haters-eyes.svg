@@ -21,7 +21,6 @@
   <title>
     hater-eyes
   </title>
-  <path id="frame" class="cls-1" d="M0 0H1050V350H0z"/>
   <g class="blink">
   <path class="st0" d="M369.2 11.6l24.1 7.3 2.4 14.4 2.8-12.2 18.8 2.6-18 15.6-30.1-27.7zM484.8 11l-24.1 7.3-2.4 14.4-6.8-12.2-14.9 2.6 18.1 15.6L484.8 11z"/>
   <use xlink:href="#eyes-right" width="58.6" height="48" x="-29.3" y="-24" transform="matrix(1 0 0 -1 783 23.5767)" overflow="visible"/>
