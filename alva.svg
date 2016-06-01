@@ -1,7 +1,7 @@
 <svg width="224" height="404" viewBox="0 0 224 404" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="filamentglow" x="-100%" y="-100%" width="300%" height="300%">
-      <feColorMatrix result="out" in="SourceGraphic" values="0 0 0 1 0 0 0 0 0.8235 0 0 0 0 0.302 0 0 0 0 1 0"/>
+      <feColorMatrix result="out" in="SourceGraphic" values="0 0 0 1 0 0 0 0 0.82 0 0 0 0 0.3 0 0 0 0 1 0"/>
       <feMorphology result="out" in="out" operator="dilate" radius="10"/>
       <feGaussianBlur result="out" in="out" stdDeviation="15.5"/>
       <feBlend in="SourceGraphic" in2="out" result="Glow1"/>
